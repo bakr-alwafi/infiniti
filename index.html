@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ar" dir="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="انفينتي">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>انفينتي</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="./css/aos.min.css" rel="stylesheet">
+    <link href="./css/swiper.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.png">
+    <style>
+        .d-flex-infiniti {
+           
+            display: flex !important;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.btn-secondary {
+    color: black;
+    /* border-width: 2px; */
+    padding: 10px 30px;
+    /* border-image-slice: 1; */
+    background-image: none;
+    background: #027abb;
+    border-radius: 20px;
+    border: 1px solid #027abb;
+    /* border-image-source: var(--gradient); */
+}
+.testimonial-card {
+     border: 0px solid; 
+    border-image-slice: 1;
+    border-width:0px;
+    border-image-source: var(--gradient);
+}
+.swiper-button-next{
+    background-color: #010b5f;
+    /* color: #010b5f !important; */
+    padding-right: 77px;
+    border-radius: 30px 0px 0px 30px;
+}
+.swiper-button-prev{
+    background-color: #010b5f;
+    /* color: #010b5f !important; */
+    padding-right: 77px;
+    border-radius: 0px 30px 30px 0px;
+}
+.footer {
+    background-color: #000b60;
+}
+ .testimonial {
+    background-color: #eaeaea;
+}
+.slide-title{
+    color:#0278bb;
+}
+.services{
+    height: 27vh; 
+    position: relative;
+    background-color: #eeeeee;
+}
+.services .card {
+    padding: 20px;
+    border-radius: 0;
+    border: 2px solid white;
+    background-color: white !important;
+    color: #0278bb;
+    height: 140px;
+}
+.py-2 {
+    padding-top: .5rem !important;
+    font-size: large;
+    padding-bottom: .5rem !important;
+}
+.d-flex-inf-footer{
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-direction: column;
+}
+/* .services .fas, .location .far, .location .fas {
+    padding: 15px 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0279bb), to(#0279bb));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+.div-logo{
+    position: absolute;
+    float: left;
+    direction: ltr;
+    top: 80px;
+    left: 200px;
+}
+.bottom {
+    background-color: #fafafa;
+    color: #0278bb;
+}
+.work-text{
+    background: #010b60;
+    padding: 5px;
+    border-radius: 20px 0px 0 20px;
+}
+.work{
+    background-color: #0278bb;
+}
+.btn {
+    color: white;
+    border-radius: 11px;
+    border: 1px solid #ffffff;
+    /* border-width: 2px; */
+    padding: 10px 100px;
+    border-image-slice: 1;
+    background-image: none;
+    background: white;
+    color: #0279bb;
+    box-shadow: 0 0;
+}
+.work{
+    height: 39vh;
+    position: relative;
+
+background-image: url('assets/images/Screenshot\ 1445-10-08\ at\ 5.02.17\ PM.png');
+background-repeat: no-repeat;
+    background-size: contain;
+}
+.home{
+    height: 82vh;
+    position: relative;
+}
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    padding-right: 342px !important;
+}
+.navbar.top-nav-collapse {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #010b60;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
+}
+.navbar-collapse{
+    margin-top: 115px;
+    padding-right: 0px !important;
+    border-top: 1px solid white;
+}
+}
+
+    </style>
+</head>
+<body dir="rtl">
+
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <div class="div-logo"><a class="navbar-brand logo-text" href="index.html"  >infiniti Graphics</a></div>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" style="
+            margin-top: 115px;
+           
+            border-top: 1px solid white;
+        ">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">من نحن ؟</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plans">مشاريعنا</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">توصل معنا</a>
+                    </li>
+                </ul>
+              
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+    
+
+
+    <!-- Home -->
+    <section class="home py-5 d-flex align-items-center" id="header">
+        <div class="container text-light py-5"  data-aos="fade-right" style="text-align: center;"> 
+            
+        
+        
+            <div class="my-3">
+                <a class="btn" href="#plans">اطلب عرض سعر</a>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of home -->
+
+
+ 
+
+    <!-- Services -->
+    <section class="services d-flex align-items-center py-5" id="services" dir="ltr">
+        <div class="container text-light">
+            <div class="container" style="position: relative;top: -165px;">
+                <div class="row justify-content-center">
+                  <div class="col " style="padding: 0 0 !important;">
+                    <div class="card text-center bg-transparent"style="padding: 20px; border-radius: 20px 0 0 20px;">
+                        <i class="	fas fa-hotel fa-2x fas-hover"></i>
+                        <h4 class="py-2">الواح اللامنيوم</h4>
+                      
+                    </div>   
+        
+        
+                  </div>
+                  <div class="col" style="padding: 0 0 !important;">
+                    <div class="card text-center bg-transparent"style="padding: 20px;">
+                        <i class="	fas fa-ad fa-2x fas-hover"></i>
+                        <h4 class="py-2">اللوحات الاعلانية</h4>
+                      
+                    </div>   
+        
+        
+                  </div>
+                  <div class="col" style="padding: 0 0 !important;">
+                    <div class="card text-center bg-transparent"style="padding: 20px;">
+                        <i class="fas fa-tv fa-2x fas-hover"></i>
+                        <h4 class="py-2">3D حروف</h4>
+                      
+                    </div>   
+        
+        
+                  </div>
+                  <div class="col" style="padding: 0 0 !important;">
+                    <div class="card text-center bg-transparent"style="padding: 20px;">
+                        <i class="	fas fa-coffee fa-2x fas-hover "></i>
+                        <h4 class="py-2">الهدايا الدعاية</h4>
+                      
+                    </div>   
+        
+        
+                  </div>
+                  <div class="col" style="padding: 0 0 !important;">
+                    <div class="card text-center bg-transparent"style="padding: 20px;">
+                        <i class="fas fa-print fa-2x fas-hover"></i>
+                        <h4 class="py-2">تقنيات الطباعة</h4>
+                      
+                    </div>   
+        
+        
+                  </div>
+                  <div class="col" style="padding: 0 0 !important;">
+                    <div class="card text-center bg-transparent"style="padding: 20px;">
+                        <i class="	fas fa-box-open fa-2x fas-hover"></i>
+                        <h4 class="py-2">التغليف</h4>
+                      
+                    </div>   
+        
+        
+                  </div>
+                  <div class="col" style="padding: 0 0 !important;   ">
+                    <div class="card text-center bg-transparent"style="padding: 20px;  border-radius: 0 20px 20px 0;">
+                        <i class="	fas fa-pen-nib fa-2x fas-hover"></i>
+                        <h4 class="py-2">الهوية البصرية</h4>
+                      
+                    </div>   
+        
+        
+                  </div>
+                </div>
+              </div>
+        
+        </div> <!-- end of container -->
+    </section> <!-- end of services -->
+   
+
+
+
+
+    <!-- Testimonials -->
+    <div class="slider-1 testimonial text-light d-flex align-items-center" dir="ltr">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="text-center w-lg-75 m-auto pb-4">
+                    <h2 style="    color: #0279bb;">اعمالنا</h2>
+                
+                </div>
+            </div> <!-- end of row -->
+            <div class="row p-2" data-aos="zoom-in">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-card p-4">
+                                       
+                                        <div class="d-flex-infiniti pt-4">
+                                            <div>
+                                                <img src="./assets/images/pexels-abdulmeilk-aldawsari-35761 (2).jpg" alt="testimonial">
+                                            </div>
+                                            <div class="slide-title ms-3 pt-2 text-center">
+                                            <p>من اعمالنا-معرض نايس</p>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of testimonials -->
+
+    <!--work-->
+    <section class="work d-flex align-items-center py-5" >
+        <div class="container-fluid text-light">
+            <div class="row">
+                <div class="col-lg-5 d-flex align-items-center px-4 py-3" data-aos="">
+                    <div class="row">
+                        
+                        <div class="container" data-aos="fade-up">
+                            <h6 class="work-text">+١٠٠ مشروع</h6><br>
+                            <h6 class="work-text">+١٠ سنوات خبرة</h6><br>
+                            <h6 class="work-text">+٢٠سنة ضمان</h6><br>
+
+                        </div> <!-- end of container -->
+                    </div> <!-- end of row -->
+                </div> <!-- end of col-lg-5 -->
+                
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of work -->
+
+    <section class="location text-light py-5">
+        <div class="container" data-aos="zoom-in">
+            <div class="row">
+                <div class="col-lg-3 d-flex align-items-center">
+                    <div class="p-2"><i class="far fa-map fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>ADDRESS</h6>
+                        <p>Teuku Umar ST. 1919</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center" >
+                    <div class="p-2"><i class="fas fa-mobile-alt fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>CALL FOR QUERY</h6>
+                        <p>(800) 265  216 2020</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center" >
+                    <div class="p-2"><i class="far fa-envelope fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>SEND US MESSAGE</h6>
+                        <p>infodemofile@example.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 d-flex align-items-center" >
+                    <div class="p-2"><i class="far fa-clock fa-3x"></i></div>
+                    <div class="ms-2">
+                        <h6>OPENING HOURS</h6>
+                        <p>09:00 AM - 18:00 PM</p>
+                    </div>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of location -->
+
+
+    <!-- Footer -->
+    <section class="footer text-light" dir="ltr">
+        <div class="container">
+            <div class="row" data-aos="fade-right">
+                <div class="col-lg-4 py-4 py-md-5">
+                    <div class="d-flex align-items-center">
+                        <h4 class="">infiniti Graphics</h4>
+                    </div>
+                    <p class="py-3 para-light">نتطلع لنصبح رواد الدعاية والإعلان بمشاريع وفقا لرؤية السعودية 2030
+                        <br>
+                        Aspiring to lead in advertisement by providing projects conforming to KSA
+
+
+
+                    </p>
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <a href="#your-link">
+                                <i class="fab fa-facebook-f fa-2x py-2"></i>
+                            </a>
+                        </div>
+                        <div class="me-3">
+                            <a href="#your-link">
+                                <i class="fab fa-twitter fa-2x py-2"></i>
+                            </a>
+                        </div>
+                        <div class="me-3">
+                            <a href="#your-link">
+                                <i class="fab fa-instagram fa-2x py-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- end of col -->
+
+                
+
+               
+
+                <div class="col-lg-4 py-4 py-md-5" dir="rtl">
+                    <div class="d-flex align-items-center">
+                        <h4>تواصل بنا</h4>
+                    </div>
+                
+                    <div class="d-flex-inf-footer align-items-center">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control p-2" aria-label="Recipient's email">
+                           
+                                
+                        </div>
+                        <br>
+                        <button class="btn-secondary text-light">ارسل</button>  
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-lg-4 py-4 py-md-5" dir="rtl">
+                    <div>
+                      
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-left"></i>
+                            <a href="#about" style="    padding-right: 5px;"><p class="ms-3">الرئيسية</p></a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-left"></i>
+                            <a href="#" style="    padding-right: 5px;"><p class="ms-3">من نحن ؟</p></a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-left"></i>
+                            <a href="#" style="    padding-right: 5px;"><p class="ms-3">خدماتنا</p></a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-left"></i>
+                            <a href="#" style="    padding-right: 5px;"><p class="ms-3">مشاريعنا</p></a>
+                        </div>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of footer -->
+
+
+    <!-- Bottom -->
+    <div class="bottom py-2 " >
+        <div class="container text-center  justify-content-between">
+            <div class="">
+            <p>جميع الحقوق محفوظة © لدر شركة انفينتي جرافكس</p>
+            </div>
+            <!-- <div>
+                <i class="fab fa-cc-visa fa-lg p-1"></i>
+                <i class="fab fa-cc-mastercard fa-lg p-1"></i>
+                <i class="fab fa-cc-paypal fa-lg p-1"></i>
+                <i class="fab fa-cc-amazon-pay fa-lg p-1"></i>
+            </div> -->
+        </div> <!-- end of container -->
+    </div> <!-- end of bottom -->
+ 
+    
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="assets/images/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+
+    
+    <!-- Scripts -->
+    <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
+    <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
+    <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
+    <script src="./js/script.js"></script>  <!-- Custom scripts -->
+</body>
+</html>
